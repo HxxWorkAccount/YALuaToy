@@ -1,0 +1,153 @@
+# Wiki: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+# ---------------- Misc ---------------- #
+# Language: CSharp # 支持 Cpp, CSharp, Java, JavaScript, Json, ObjC, Proto, TableGen, TextProto, Verilog
+Standard: c++20 # 支持 c++03, c++11, c++14, c++17, c++20, Latest, Auto
+DisableFormat: false
+FixNamespaceComments: true
+IncludeBlocks: Merge
+InsertBraces: false
+# InsertTrailingCommas: Wrapped
+JavaScriptQuotes: Double
+SortIncludes: CaseSensitive
+SortJavaStaticImport: After
+# SortUsingDeclarations: LexicographicNumeric
+
+ColumnLimit: 140 # 0 表示无限长
+IndentWidth: 4
+ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+AccessModifierOffset: 0
+MaxEmptyLinesToKeep: 2
+ShortNamespaceLines: 0
+SpacesBeforeTrailingComments: 2
+TabWidth: 4
+UseTab: Never
+
+# ---------------- Penalty ---------------- #
+PenaltyBreakAssignment: 120
+PenaltyBreakBeforeFirstCallParameter: 120
+PenaltyBreakComment: 1000
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakOpenParenthesis: 120
+PenaltyBreakString: 120
+PenaltyBreakTemplateDeclaration: 120
+PenaltyExcessCharacter: 120
+PenaltyIndentedWhitespace: 120
+PenaltyReturnTypeOnItsOwnLine: 120
+
+# ---------------- Aligh ---------------- #
+AlignAfterOpenBracket: BlockIndent # 函数太长时，参数换行后如何排列
+AlignArrayOfStructures: None
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: Align
+# AlignTrailingComments:
+# Kind: Always
+# OverEmptyLines: 2
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# ---------------- Indent ---------------- #
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExternBlock: Indent
+IndentGotoLabels: true
+IndentPPDirectives: BeforeHash
+IndentRequiresClause: false
+IndentWrappedFunctionNames: false
+NamespaceIndentation: None
+# RequiresExpressionIndentation: OuterScope
+
+# ---------------- Split ---------------- #
+BitFieldColonSpacing: After
+Cpp11BracedListStyle: true
+SeparateDefinitionBlocks: Leave
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: true
+# SpaceBeforeJsonColon: false
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: true
+  AfterOverloadedOperator: false
+  AfterRequiresInClause: true
+  AfterRequiresInExpression: true
+  BeforeNonEmptyParentheses: false
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: true
+SpaceInEmptyParentheses: false
+SpacesInAngles: Never
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# ---------------- Break Line ---------------- #
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: false # 函数声明太长时，如何换行
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: false
+# AlwaysBreakAfterReturnType: Auto
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: true
+BinPackParameters: false
+BreakBeforeBraces: Custom # 大括号换行
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: true
+  AfterControlStatement: Never # 控制 if/for/whie... 之类的语句
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+BreakBeforeBinaryOperators: None
+BreakBeforeConceptDeclarations: Allowed
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterComma
+BreakStringLiterals: true
+CompactNamespaces: false
+JavaScriptWrapImports: true
+LambdaBodyIndentation: OuterScope
+PackConstructorInitializers: NextLine
+RequiresClausePosition: WithPreceding
+ReflowComments: false
+
+# ---------------- Empty Line ---------------- #
+EmptyLineAfterAccessModifier: Leave
+EmptyLineBeforeAccessModifier: Leave
+KeepEmptyLinesAtTheStartOfBlocks: false

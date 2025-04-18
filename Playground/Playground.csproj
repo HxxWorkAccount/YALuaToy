@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <PublishAot>true</PublishAot>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YALuaToy\YALuaToy.csproj" />
+    <ProjectReference Include="..\YALuaToy.Tests\YALuaToy.Tests.csproj" />
+    <ProjectReference Include="..\YALuaToy.StandardLibrary\YALuaToy.StandardLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

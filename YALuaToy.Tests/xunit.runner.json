@@ -1,0 +1,8 @@
+{
+  "maxTestOutputLineLength": 0,
+  "diagnosticMessages": false,
+  "internalDiagnosticMessages": false,
+  "methodDisplay": "method",
+  "parallelizeAssembly": false,
+  "parallelizeTestCollections": false
+}
