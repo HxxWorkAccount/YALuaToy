@@ -98,6 +98,11 @@ Scripts in Assets/Lua.misc.lua and under Assets/Lua/Tests can be executed. Asset
 
 The unit testing project is YALuaToy.Tests, with an overall coverage of 80% and up to 90% for the critical sections of the core. It also supports generating test reports.
 
+Need to compile CLua first (for comparative testing of results):
+```bash
+python -u Tools/RunPy.py Tools/Runner/CppRunner.py CLua/CMakeLists.txt
+```
+
 Run the tests using:
 ```bash
 python -u Tools/RunPy.py Tools/Runner/CSharpRunner.py "YALuaToy.Tests/YALuaToy.Tests.csproj"

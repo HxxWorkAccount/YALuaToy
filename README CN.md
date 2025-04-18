@@ -98,6 +98,11 @@ Assets/Lua.misc.lua 和 Assets/Lua/Tests 下的脚本都是可以执行的。Ass
 
 单元测试项目是 YALuaToy.Tests，测试覆盖率达到 80%，支持输出测试报告。
 
+需要先编译 CLua（用于对比测试结果）：
+```bash
+python -u Tools/RunPy.py Tools/Runner/CppRunner.py CLua/CMakeLists.txt
+```
+
 启动命令：
 ```bash
 python -u Tools/RunPy.py Tools/Runner/CSharpRunner.py "YALuaToy.Tests/YALuaToy.Tests.csproj"
