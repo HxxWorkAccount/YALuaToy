@@ -79,10 +79,10 @@ Assets/Lua.misc.lua 和 Assets/Lua/Tests 下的脚本都是可以执行的。Ass
 #### Windows
 ```powershell
 # 启动交互模式
-./out/YALuaToy.Interpreter/Windows/YALuaToy.Interpreter.exe
+.\\out\\YALuaToy.Interpreter\\Windows\\YALuaToy.Interpreter.exe
 
 # 执行脚本文件
-./out/YALuaToy.Interpreter/Windows/YALuaToy.Interpreter.exe Assets/Lua/misc.lua
+.\\out\\YALuaToy.Interpreter\\Windows\\YALuaToy.Interpreter.exe Assets\\Lua\\misc.lua
 ```
 
 #### macOS

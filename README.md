@@ -17,7 +17,7 @@ This project has been very helpful for my own understanding of Lua. It can also 
 
 ### Language-Related
 - A nearly complete Lua virtual machine implementation.
-- Full support for the standard libraries, except for `collectgarbage`.
+- Full support for the standard base libraries, except for `collectgarbage`.
 - Supports requiring Lua files (however, dynamic library loading is not supported; only static linking is available).
 - Complete coroutine support.
 - A frontend nearly identical to CLua (including parser and code generation, with rigorous testing); the only known difference is that it does not support illegal UTF-8 escapes.
@@ -60,7 +60,7 @@ This project has been very helpful for my own understanding of Lua. It can also 
 ## Build
 
 ### Dependencies
-Note: The versions listed below are the ones I use; lower versions are also highly likely to work:
+Note: The versions listed below are the ones I use; lower versions of Python and Java are also highly likely to work:
 - .NET 9.0
 - CMake 3.10
 - Python 3.7
@@ -79,10 +79,10 @@ Scripts in Assets/Lua.misc.lua and under Assets/Lua/Tests can be executed. Asset
 #### Windows
 ```powershell
 # Launch interactive mode
-./out/YALuaToy.Interpreter/Windows/YALuaToy.Interpreter.exe
+.\\out\\YALuaToy.Interpreter\\Windows\\YALuaToy.Interpreter.exe
 
 # Execute a lua script
-./out/YALuaToy.Interpreter/Windows/YALuaToy.Interpreter.exe Assets/Lua/misc.lua
+.\\out\\YALuaToy.Interpreter\\Windows\\YALuaToy.Interpreter.exe Assets\\Lua\\misc.lua
 ```
 
 #### macOS
