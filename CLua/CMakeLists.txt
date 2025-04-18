@@ -80,7 +80,7 @@ target_link_libraries(luac lua536s)
 
 # Lua Lexer Dump
 add_executable(dumplexer ${DUMP_CLUA_LEXER_SRC})
-target_link_libraries(dumplexer lua536)
+target_link_libraries(dumplexer lua536s)
 
 # -------------------- Install -------------------- #
 

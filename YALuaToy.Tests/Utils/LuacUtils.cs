@@ -313,9 +313,12 @@ internal static class LuacUtils
             throw new FileNotFoundException($"luac not found at {luacpath}, please build it first.");
 
         /* 用 luac 将反编译结果输出到缓存 */
-        string           filename  = Path.GetFileNameWithoutExtension(filepath);
+        string filename = Path.GetFileNameWithoutExtension(filepath);
+        string cacheDir = CommonTestUtils.GetPath("out/DecompileCache");
+        if (!Directory.Exists(cacheDir))
+            Directory.CreateDirectory(cacheDir);
         string           cachepath = CommonTestUtils.GetPath($"out/DecompileCache/{filename}.clua");
-        ProcessStartInfo startInfo = new(luacpath, $"-p -l {filepath}") {
+        ProcessStartInfo startInfo = new(luacpath, $"-p -l \"{filepath}\"") {
             UseShellExecute        = false,
             RedirectStandardOutput = true,
             RedirectStandardError  = true,
