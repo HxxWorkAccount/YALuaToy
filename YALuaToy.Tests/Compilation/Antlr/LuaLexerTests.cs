@@ -99,7 +99,7 @@ public class LuaLexerTests
                 continue;
             } else {
                 string msg = "Two lexer results are not the same:";
-                Debug.WriteLine($"\u001b[31m{msg}\u001b[0m\n\tclua:  {cluaDumpLine}\n\tcslua: {csluaLexerLine}");
+                Console.WriteLine($"\u001b[31m{msg}\u001b[0m\n\tclua:  {cluaDumpLine}\n\tcslua: {csluaLexerLine}");
                 Recover();
                 failed = true;
                 goto loopStart;

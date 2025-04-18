@@ -367,7 +367,7 @@ do
     "\27Lua",                -- signature
     5*16 + 3,                -- version 5.3
     0,                       -- format
-    "\x19\x93\r\n\x1a\n",    -- data
+    -- "\x19\x93\r\n\x1a\n",    -- data
     string.packsize("i"),    -- sizeof(int)
     string.packsize("T"),    -- sizeof(size_t)
     4,                       -- size of instruction
