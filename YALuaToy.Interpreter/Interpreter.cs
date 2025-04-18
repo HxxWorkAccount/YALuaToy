@@ -145,7 +145,7 @@ static class Interpreter
         state.OpenSTD();
         if (state.TopLdx == 0) {    /* 交互模式 */
             state.Push(PrintError); /* 先压入错误打印函数 */
-            Console.WriteLine($"YALuaToy 5.3.6  {hellos[random.Next(hellos.Length)]}");
+            Console.WriteLine($"YALuaToy 5.3.6  Encoding: {Console.OutputEncoding.WebName}  {hellos[random.Next(hellos.Length)]}");
             while (true) {
                 string? line = PowerfulReadLine();
                 if (string.IsNullOrWhiteSpace(line))
@@ -191,6 +191,7 @@ static class Interpreter
     static int Main(string[] args) {
         Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
         Trace.AutoFlush = true;
+        Console.OutputEncoding = Encoding.UTF8;
 
         LuaState state = LuaState.NewState();
         if (state == null)
